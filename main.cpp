@@ -24,7 +24,7 @@ cout << "Enter student name: ";
 cin >> studentName;
 cout << endl;
 
-while (count < 5) {
+while (count < MAX_SCORES) {
 
     cout << "Enter up to 5 scores or -1 to stop: ";
     cin >> score;
@@ -45,5 +45,12 @@ count++;
 if (count == 0) {
     cout << "No scores entered." << endl;
     return 1;
+}
+
+double computeAverage(double total, int count) {
+  if (count == 0) {
+      return 0.0;
+  }
+  return total / count;
 }
     
