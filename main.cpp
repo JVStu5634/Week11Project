@@ -19,6 +19,7 @@ int main()
   double score;
   double total = 0.0;
   int count = 0;
+  int average;
 
 cout << "Enter student name: ";
 cin >> studentName;
@@ -47,11 +48,11 @@ if (count == 0) {
     return 1;
 }
 
-double computeAverage(double total, int count) {
+double computeAverage(double total, int count, int average) {
   if (count == 0) {
       return 0.0;
   }
-  return total / count;
+  return average = total / count;
 }
 char getLetterGrade(int score) {
   if (score >= 90) {
