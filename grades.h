@@ -15,7 +15,7 @@ D,
 F
 };
 
-LetterGrade getLettergrade(int score);
+LetterGrade getLettergrade(int average);
 
 char gradeToChar(LetterGrade grade);
 
