@@ -27,7 +27,7 @@ cout << endl;
 
 while (count < MAX_SCORES) {
 
-    cout << "Enter up to 5 scores or -1 to stop: ";
+    cout << "Enter up to 5 scores (-1 to stop): ";
     cin >> score;
 
 if (score == -1) {
@@ -52,7 +52,9 @@ double computeAverage(double total, int count, int average) {
   if (count == 0) {
       return 0.0;
   }
-  return average = total / count;
+  else { 
+    average = total / count;
+    return average;
 }
 char getLetterGrade(int score) {
   if (score >= 90) {
@@ -88,4 +90,13 @@ default:
   }
 }
 
-    
+cout << "--- Report for " << studentName << " ---" << endl;
+cout << "Number of scores entered: " << count << endl;
+cout << "Total points: " << total << endl;
+cout << "Average: " << average << endl;
+cout << "Letter grade: " << grade << endl;
+
+
+return 0;
+
+}
