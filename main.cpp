@@ -30,6 +30,7 @@ cout << endl;
 while (count < MAX_SCORES) {
 
     cout << "Enter up to 5 scores (-1 to stop): ";
+    cout << "Score " << (count + 1) << ": "; 
     cin >> score;
 
 if (score == -1) {
