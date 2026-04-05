@@ -5,9 +5,11 @@
 
 #include "stats.h"
 
-double computeAverage(double total, int count) {
+double computeAverage(double total, int count, int average) {
   if (count == 0) {
       return 0.0;
   }
-  return total / count;
-}
+  else { 
+    average = total / count;
+    return average;
+  }
