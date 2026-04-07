@@ -51,7 +51,7 @@ if (count == 0) {
     return 1;
 }
 
-double computeAverage(double total, int count, int average) {
+double computeAverage(double total, int count, int average); {
   if (count == 0) {
       return 0.0;
   }
@@ -59,7 +59,7 @@ double computeAverage(double total, int count, int average) {
     average = total / count;
     return average;
 }
-char getLetterGrade(int score) {
+char getLetterGrade(int score); {
   if (score >= 90) {
     return LetterGrade::A;
   }
@@ -76,7 +76,8 @@ char getLetterGrade(int score) {
     return LetterGrade::F;
   }
 }
-char gradeToChar(LetterGrade grade) {
+  char grade = score;
+char gradeToChar(LetterGrade grade); {
   switch (grade) {
 case LetterGrade::A:
     return 'A';
