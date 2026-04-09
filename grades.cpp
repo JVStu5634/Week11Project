@@ -22,6 +22,7 @@ char getLetterGrade(int average) {
     return LetterGrade::F;
   }
 }
+char grade = getLetterGrade();
 char gradeToChar(LetterGrade grade) {
   switch (grade) {
 case LetterGrade::A:
@@ -38,3 +39,4 @@ default:
   return '?';
   }
 }
+char Lettergrade = gradeToChar();
