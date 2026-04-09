@@ -42,9 +42,10 @@ if (score < 0 || score > 100) {
     continue;
 }
 
-total += score;
+double total += score;
 count++;
 }
+
 
 if (count == 0) {
     cout << "No scores entered." << endl;
@@ -55,28 +56,29 @@ double computeAverage(double total, int count, int average); {
   if (count == 0) {
       return 0.0;
   }
-  else { 
-    average = total / count;
-    return average;
+  
+    return total / count;
 }
-char getLetterGrade(int score); {
-  if (score >= 90) {
+ int average = computeAverage();
+char getLetterGrade(int average); {
+  if (average >= 90) {
     return LetterGrade::A;
   }
-  else if (score >= 80) {
+  else if (average >= 80) {
     return LetterGrade::B;
   }
-  else if (score >= 70) {
+  else if (average >= 70) {
     return LetterGrade::C;
   }
-  else if (score >= 60) {
+  else if (average >= 60) {
     return LetterGrade::D;
   }
   else {
     return LetterGrade::F;
   }
 }
-  char grade = score;
+ char grade = getLetterGrade();
+
 char gradeToChar(LetterGrade grade); {
   switch (grade) {
 case LetterGrade::A:
